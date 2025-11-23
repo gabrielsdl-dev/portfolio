@@ -1,0 +1,89 @@
+<html lang="pt-br">
+
+<head>
+    <link href="CSS/seusite.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" sizes="30x35" href=IMG/LOGO/LOGO.png>
+    <link rel="shortcut icon" href="IMG/logo.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <title>PORTFÓLIO</title>
+</head>
+
+<body>
+    <header>
+        <img src="IMG/logo.png" class="logo-header" />
+
+
+        <div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="portfolio.html">Portfólio</a> <span class="seta">›</span></li>
+                    <li><a href="seusite.html">Solicite Seu Site</a><span class="seta">›</span></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="txt">
+        <h2>Transforme suas ideias em um site profissional</h2>
+        <p>Clique no botão abaixo para transformar suas ideias em realidade.</p>
+    </div>
+    <button class="orcamento-btn" onclick="abrirFormulario()">FAZER UM ORÇAMENTO</button>
+
+
+    <footer>
+        <h2>Seu próximo site começa aqui. Vamos conversar.</h2>
+        <div class="social-links">
+            <a href="https://instagram.com/robullst" target="_blank">
+                <i class="fa fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/5511975364351" target="_blank">
+                <i class="fa fa-whatsapp"></i>
+            </a>
+        </div>
+
+        <br></br>
+        <p>© 2025 Todos os direitos reservados.</p>
+    </footer>
+
+
+    <p id="mensagem-sucesso" class="mensagem-sucesso" style="display:none;">
+            Seu orçamento foi solicitado com sucesso! <br>
+            Em breve entrarei em contato para darmos sequência.
+    </p>
+
+    <div class="form-popup" id="formOrcamento">
+        <div class="form-content">
+            <span class="fechar" onclick="fecharFormulario()">×</span>
+
+            <h2>Solicitar Orçamento</h2>
+
+            <label>Seu nome:</label>
+            <input type="text" id="nome" placeholder="Digite seu nome">
+
+            <label>Tipo de site desejado:</label>
+            <select id="tipo">
+                <option value="Site Institucional">Site Institucional</option>
+                <option value="Landing Page">Landing Page</option>
+                <option value="Portfólio">Portfólio</option>
+                <option value="Loja Virtual">Loja Virtual</option>
+                <option value="Outro">Outro</option>
+            </select>
+
+            <label>Descreva o que você deseja:</label>
+            <textarea id="descricao" rows="4"
+                placeholder="Ex: Quero um site moderno, com página inicial, formulário e área de produtos..."></textarea>
+
+            <button class="enviar-btn" onclick="enviarWhatsApp()">Enviar para WhatsApp</button>
+        </div>
+
+    </div>
+
+
+    <script src="JS/mensagem.js"></script>
+    <script src="JS/orçamento.js"></script>
+</body>
+
+</html>

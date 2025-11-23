@@ -1,0 +1,274 @@
+body {
+    margin: 0;
+    font-family:'Franklin Gothic Medium', sans-serif;
+    background-color: #ffffff;
+    color: white;
+}
+
+header {
+    background-color: #000000;
+    color: bisque;
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+
+.logo-header{
+    width: 20%;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    font-family: 'Sage', serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+
+/* ===== MENU ===== */
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
+    background-color: rgb(237, 44, 44);
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 60px; /* espaçamento */
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.menu li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    color: #ffffff;
+    transition: 0.2s;
+    letter-spacing: .2px;
+}
+
+
+.menu a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.seta {
+    font-size: 20px;
+    color: #ffffff;
+    transition: 0.2s;
+}
+
+/* seta fica preta no hover */
+.menu li:hover .seta{
+    color: rgb(0, 0, 0);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .menu ul {
+        gap: 25px;
+    }
+    .menu a {
+        font-size: 15px;
+    }
+}
+
+.txt h2{
+    text-align: center;
+    color: #b02020;
+    font-size: 30px;
+}
+
+.txt p{
+    text-align: center;
+    color: #000000;
+    font-size: 20px;
+}
+
+footer {
+    background-color:  rgb(237, 44, 44);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* centraliza tudo */
+    justify-content: center;
+}
+
+footer::before {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 1px;
+    background-color: b;
+    margin-bottom: 20px;
+}
+
+footer p {
+    margin: 15px 0;
+    font-style: italic;
+}
+
+/* 🔹 Logo maior e centralizada */
+.logo{
+    width: 300px;
+    /* ajuste o tamanho como quiser */
+    height: auto;
+    margin: 20px 0;
+    display: block;
+}
+
+/* 🔹 Ícone do Instagram */
+/* 🔹 Ícone do Instagram maior e centralizado no rodapé */
+footer a i.fa-instagram {
+    font-size: 50px !important;
+    /* aumenta o tamanho */
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;
+}
+
+footer a i.fa-instagram:hover {
+    color: rgb(0, 0, 0);
+    transform: scale(1.15);
+}
+
+footer a i.fa-whatsapp {
+    font-size: 50px !important;
+    /* aumenta o tamanho */
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;
+}
+
+footer a i.fa-whatsapp:hover {
+    color: rgb(0, 0, 0);
+    transform: scale(1.15);
+}
+
+.social-links a {
+    margin: 0 10px;  /* espaçamento lateral */
+    font-size: 22px;
+    color: white;
+}
+
+.linha {
+    content: "";
+    display: block;
+    width: 900px;
+    height: 4px;
+    background-color: #ffffff;
+    margin: 40px auto 0;
+    border-radius: 3px;
+}
+
+
+
+/* BOTÃO ORÇAMENTO */
+.orcamento-btn {
+    background: rgb(237, 44, 44);
+    color: #fff;
+    padding: 14px 26px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+    margin: 30px auto;
+    display: block;
+}
+
+.orcamento-btn:hover {
+    background: #b02020;
+}
+
+
+/* POP-UP */
+.form-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+}
+
+.form-content {
+    background: #fff;
+    width: 90%;
+    max-width: 420px;
+    padding: 25px;
+    border-radius: 12px;
+    animation: aparecer 0.3s ease;
+    color: #000000;
+}
+
+@keyframes aparecer {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.form-content h2 {
+    margin-top: 0;
+    color: rgb(237,44,44);
+    text-align: center;
+}
+
+.form-content input,
+.form-content select,
+.form-content textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.fechar {
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.enviar-btn {
+    background: rgb(237, 44, 44);
+    color: #fff;
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.enviar-btn:hover {
+    background: #b02020;
+}
+

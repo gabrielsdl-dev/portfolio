@@ -1,85 +1,80 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gabriel Santos | Desenvolvedor </title>
-  <link rel="stylesheet" href="portifolio.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="CSS/index.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/png" sizes="30x35" href=IMG/LOGO/LOGO.png>
+  <link rel="shortcut icon" href="IMG/logo.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <title>PORTFÓLIO</title>
 </head>
 
 <body>
   <header>
-    <h1>Gabriel Santos</h1>
-    <nav>
-      <a href="#sobre">Sobre</a>
-      <a href="#projetos">Projetos</a>
-      <a href="#contato">Contato</a>
-    </nav>
+    <img src="IMG/logo.png" class="logo-header" />
+
+
+    <div>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="portfolio.html">Portfólio</a> <span class="seta">›</span></li>
+          <li><a href="seusite.html">Solicite Seu Site</a><span class="seta">›</span></li>
+        </ul>
+      </nav>
+
+    </div>
   </header>
 
-  <section class="hero">
-    <h2>Desenvolvedor em Formação</h2>
-    <p>Construindo soluções modernas com código limpo e funcional.</p>
-    <a href="#projetos" class="btn">Veja meus projetos</a>
-  </section>
 
-  <section id="sobre" class="sobre">
-    <h2>Sobre Mim</h2>
-    <p>
-      Olá! Me chamo Gabriel Santos de Lima e sou um desenvolvedor em início de carreira, apaixonado por tecnologia,
-      design funcional e soluções que realmente ajudam pessoas. Desde que comecei minha jornada na programação, venho
-      estudando e praticando com foco em me tornar um desenvolvedor, explorando linguagens como Java, SQL, HTML, CSS, JavaScript e
-      ferramentas modernas como React e Node.js.
+  <main>
+    <div class="container">
+      <div class="conteudoprin">
 
-      Tenho prazer em aprender, encarar desafios e construir projetos que me ajudem a evoluir tecnicamente e
-      profissionalmente. Estou sempre buscando crescer, colaborar com outras pessoas desenvolvedoras e transformar
-      ideias em realidade com código limpo e bem estruturado.
+        <h2>Aprendendo, Evoluindo e Criando</h2>
 
-      No momento, estou construindo meu portfólio com projetos práticos, aprimorando minhas habilidades e aberto a novas
-      oportunidades que me permitam continuar aprendendo e contribuindo para o mundo da tecnologia.
-    </p>
-  </section>
+        <P>Me chamo Gabriel Santos de Lima, sou estudante de Análise e Desenvolvimento de Sistemas e apaixonado por
+          tecnologia. Cada <a href="portfolio.html">projeto</a> que desenvolvo é mais do que um exercício de
+          aprendizado, é uma oportunidade de
+          criar soluções digitais que realmente ajudam pessoas e negócios a crescerem online.</P>
 
-  <section id="projetos" class="projetos">
-    <h2>Projetos</h2>
-    <div class="card">
-      <h3>Site Espaço Visual Masculino</h3>
-      <p>Site com foco em apresentar a barbearia para o cliente. Contém links para agendamentos e também a localização da barbearia, além de um formulário feito em JavaScript. </p>
-      <p><strong>Tecnologias:</strong> HTML, CSS e JavaScript</p>
-      <a href="https://gabrielsdl-dev.github.io/espaco_visual_masculino/" target="_blank">🔗 Espaço Visual Masculino</a>
-    </div>
+        <p>Ao longo da minha jornada, venho me especializando em Java, JavaScript, HTML, CSS e em ferramentas modernas
+          que tornam cada site mais rápido, seguro e eficiente. Meu foco é unir design simples, boa experiência do
+          usuário e funcionalidade prática, criando sites que passam credibilidade e geram resultados.</p>
 
-    <div class="card">
-      <h3>Site da Robullst</h3>
-      <p>Este site foi feito para a marca de roupas esportivas ROBULLST, ele possui um design limpo e funcional, focado na experiência do usuario.</p>
-      <p><strong>Tecnologias:</strong> HTML, CSS e JavaScript</p>
-      <a href="https://gabrielsdl-dev.github.io/Site-Robullst/" target="_blank">🔗 Robullst</a>
-    </div>
+        <p>Cada cliente que atendo recebe um trabalho feito com dedicação, cuidado e atenção aos detalhes. Estou sempre
+          evoluindo, aprendendo e aplicando novos conhecimentos para entregar sites cada vez melhores, seja ele uma
+          página institucional, portfólio ou landing page</p>
 
-    <div class="card">
-      <h3>Sistema de Agendamento Barbearia</h3>
-      <p>Interface com o objetivo de controlar o agendameno da empresa</p>
-      <p><strong>Tecnologias:</strong> Java</p>
-      <a class="links" href="https://pt.linkedin.com/posts/gabriel-santos-de-lima-dev_java-desenvolvimentojava-portf%C3%B3lio-activity-7334961371148603392-kzxJ" target="_blank">🔗 Vídeo do Sistema</a>
-    </div>
-  </section>
-  </section>
+        <p>Se você busca um site moderno, responsivo e bem estruturado, feito sob medida para o seu objetivo, <a
+            href="seusite.html">entre em contato comigo</a>, estou
+          pronto para transformar sua ideia em realidade.</p>
+
+        <br></br>
+
+      </div>
+  </main>
 
 
   <footer>
-    <section id="contato" class="contato">
-      <h2>Contatos</h2>
-      <p> <a href="https://github.com/gabrielsdl-dev" target="_blank"><i class="fab fa-github"></i></a> |
-          <a href="https://linkedin.com/in/gabriel-santos-de-lima-dev" target="_blank"><i class="fab fa-linkedin"></i></a> |
-          <a href="https://wa.me/5511975364351" target="_blank"><i class="fab fa-whatsapp"></i></a> |
-          <a href="mailto:biel.sdlima@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-      </p>
-    </section>
+    <h2>Seu próximo site começa aqui. Vamos conversar.</h2>
+    <div class="social-links">
+      <a href="https://instagram.com/robullst" target="_blank">
+        <i class="fa fa-instagram"></i>
+      </a>
+      <a href="https://wa.me/5511975364351" target="_blank">
+        <i class="fa fa-whatsapp"></i>
+      </a>
+    </div>
 
-    <p>© 2025 Gabriel Santos. Todos os direitos reservados.</p>
+    <br></br>
+    <p>© 2025 Todos os direitos reservados.</p>
   </footer>
+
+  
+  <a href="seusite.html" class="float-btn">
+    <i class="fa fa-pencil"></i>
+  </a>
 </body>
 
 </html>
