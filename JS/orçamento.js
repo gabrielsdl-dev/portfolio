@@ -11,15 +11,15 @@ function enviarWhatsApp() {
     const tipo = document.getElementById("tipo").value;
     const descricao = document.getElementById("descricao").value;
 
-    const texto = `Olá! Gostaria de solicitar um orçamento.%0A%0A
-Nome: ${nome}%0A
-Tipo de site: ${tipo}%0A
-Descrição: ${descricao}`;
+    if (nome.trim() === "" || descricao.trim() === "") {
+        alert("Preencha todos os campos antes de enviar!");
+        return;
+    }
 
-    const url = `https://wa.me/5511975364351?text=${texto}`;
+    const numero = "5511975364351"; 
+    const mensagem = `Olá! Meu nome é ${nome}.%0A%0AQuero um orçamento para:%0A*${tipo}*.%0A%0ADescrição do projeto:%0A${descricao}`;
 
-    // Marca que enviou
-    localStorage.setItem("orcamentoEnviado", "true");
+    const url = `https://wa.me/${numero}?text=${mensagem}`;
 
-    window.location.href = url;
+    window.open(url, "_blank");
 }
