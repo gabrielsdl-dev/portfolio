@@ -13,28 +13,18 @@
   <header>
     <img src="IMG/logo.png" class="logo-header" />
 
-    <!-- Menu Desktop -->
-    <nav class="menu-desktop">
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="portfolio.html">Portfólio</a></li>
-        <li><a href="seusite.html">Solicite Seu Site</a></li>
-      </ul>
-    </nav>
 
-    <!-- Botão hambúrguer -->
-    <div class="hamburger" onclick="toggleMenu()">
-      <i class="fa fa-bars"></i>
+    <div>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="portfolio.html">Portfólio</a> <span class="seta">›</span></li>
+          <li><a href="seusite.html">Solicite Seu Site</a><span class="seta">›</span></li>
+        </ul>
+      </nav>
+
     </div>
-
-    <!-- Menu Mobile -->
-    <nav class="menu-mobile" id="menuMobile">
-      <a href="index.html">Início</a>
-      <a href="portfolio.html">Portfólio</a>
-      <a href="seusite.html">Solicite Seu Site</a>
-    </nav>
   </header>
-
 
 
   <main>
@@ -81,17 +71,10 @@
     <p>© 2025 Todos os direitos reservados.</p>
   </footer>
 
-
+  
   <a href="seusite.html" class="float-btn">
     <i class="fa fa-pencil"></i>
   </a>
-
-  <script>
-    function toggleMenu() {
-      const menu = document.getElementById("menuMobile");
-      menu.style.right = menu.style.right === "0px" ? "-100%" : "0px";
-    }
-  </script>
 </body>
 
 </html>
