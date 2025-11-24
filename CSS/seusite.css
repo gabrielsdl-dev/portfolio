@@ -87,16 +87,44 @@ header h1 {
     }
 }
 
-.txt h2{
-    text-align: center;
-    color: #b02020;
-    font-size: 30px;
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 40px;
 }
 
-.txt p{
+.conteudoprin {
+    flex: 3;
+}
+
+.conteudoprin h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color:rgb(237, 44, 44);
+    font-family: 'Sage',serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
     text-align: center;
-    color: #000000;
-    font-size: 20px;
+}
+
+.conteudoprin p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color:black;
+    text-align: center;
+}
+
+.data{
+    text-align: center;
+}
+
+.conteudoprin a {
+    color:rgb(237, 44, 44);
+    font-weight: bold;
+    text-decoration: none;
 }
 
 footer {

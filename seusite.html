@@ -26,60 +26,75 @@
     </header>
 
 
-    <div class="txt">
-        <h2>Transforme suas ideias em um site profissional</h2>
-        <p>Clique no botão abaixo para transformar suas ideias em realidade.</p>
-    </div>
-    <button class="orcamento-btn" onclick="abrirFormulario()">FAZER UM ORÇAMENTO</button>
+    <div class="container">
+        <div class="conteudoprin">
+            <p>Ter um site hoje não é mais um diferencial, é uma necessidade. Se o seu negócio ainda não está na
+                internet,
+                você está deixando de alcançar clientes todos os dias. Um site profissional aumenta a credibilidade da
+                sua
+                marca, fortalece sua presença online e abre portas para novas oportunidades.</p>
 
-
-    <footer>
-        <h2>Seu próximo site começa aqui. Vamos conversar.</h2>
-        <div class="social-links">
-            <a href="https://instagram.com/robullst" target="_blank">
-                <i class="fa fa-instagram"></i>
-            </a>
-            <a href="https://wa.me/5511975364351" target="_blank">
-                <i class="fa fa-whatsapp"></i>
-            </a>
+            <p>Eu posso criar para você um site moderno, responsivo e pensado estrategicamente para o seu tipo de
+                negócio.
+                Seja uma página institucional, landing page, portfólio ou site completo, você terá uma solução que
+                transmite
+                profissionalismo, gera confiança e atrai mais clientes.</p>
+            <p></p>
+            <h2>Dê o próximo passo para destacar sua marca.</h2>
+            <p>Clique no botão abaixo para transformar suas ideias em realidade.</p>
+        </div>
         </div>
 
-        <br></br>
-        <p>© 2025 Todos os direitos reservados.</p>
-    </footer>
+        <button class="orcamento-btn" onclick="abrirFormulario()">SOLICITE UM ORÇAMENTO</button>
+
+
+        <footer>
+            <h2>Seu próximo site começa aqui. Vamos conversar.</h2>
+            <div class="social-links">
+                <a href="https://instagram.com/robullst" target="_blank">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/5511975364351" target="_blank">
+                    <i class="fa fa-whatsapp"></i>
+                </a>
+            </div>
+
+            <br></br>
+            <p>© 2025 Todos os direitos reservados.</p>
+        </footer>
 
 
 
-    <div class="form-popup" id="formOrcamento">
-        <div class="form-content">
-            <span class="fechar" onclick="fecharFormulario()">×</span>
+        <div class="form-popup" id="formOrcamento">
+            <div class="form-content">
+                <span class="fechar" onclick="fecharFormulario()">×</span>
 
-            <h2>Solicitar Orçamento</h2>
+                <h2>Solicitar Orçamento</h2>
 
-            <label>Seu nome:</label>
-            <input type="text" id="nome" placeholder="Digite seu nome">
+                <label>Seu nome:</label>
+                <input type="text" id="nome" placeholder="Digite seu nome">
 
-            <label>Tipo de site desejado:</label>
-            <select id="tipo">
-                <option value="Site Institucional">Site Institucional</option>
-                <option value="Landing Page">Landing Page</option>
-                <option value="Portfólio">Portfólio</option>
-                <option value="Loja Virtual">Loja Virtual</option>
-                <option value="Outro">Outro</option>
-            </select>
+                <label>Tipo de site desejado:</label>
+                <select id="tipo">
+                    <option value="Site Institucional">Site Institucional</option>
+                    <option value="Landing Page">Landing Page</option>
+                    <option value="Portfólio">Portfólio</option>
+                    <option value="Loja Virtual">Loja Virtual</option>
+                    <option value="Outro">Outro</option>
+                </select>
 
-            <label>Descreva o que você deseja:</label>
-            <textarea id="descricao" rows="4"
-                placeholder="Ex: Quero um site moderno, com página inicial, formulário e área de produtos..."></textarea>
+                <label>Descreva o que você deseja:</label>
+                <textarea id="descricao" rows="4"
+                    placeholder="Ex: Quero um site moderno, com página inicial, formulário e área de produtos..."></textarea>
 
-            <button class="enviar-btn" onclick="enviarWhatsApp()">Enviar para WhatsApp</button>
+                <button class="enviar-btn" onclick="enviarWhatsApp()">Enviar para WhatsApp</button>
+            </div>
+
         </div>
 
-    </div>
 
-
-    <script src="JS/mensagem.js"></script>
-    <script src="JS/orçamento.js"></script>
+        <script src="JS/mensagem.js"></script>
+        <script src="JS/orçamento.js"></script>
 </body>
 
 </html>
